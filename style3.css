@@ -1,0 +1,115 @@
+/* General body style */
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  margin-top: 30px;
+  padding: 20px;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Balance section */
+.balance h2 {
+  margin: 10px 0;
+  color: #333;
+}
+.balance p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Net Total */
+.net-total {
+  margin: 10px 0;
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Transaction form */
+.transaction-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transaction-form input,
+.transaction-form select,
+.transaction-form button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.transaction-form button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.transaction-form button:hover {
+  background: #0056b3;
+}
+
+/* Transaction list */
+#transaction-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#transaction-list li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid;
+  border-radius: 4px;
+}
+
+#transaction-list li.income {
+  border-color: green;
+  color: green;
+}
+
+#transaction-list li.expense {
+  border-color: red;
+  color: red;
+}
+
+/* Remove button inside list */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-btn:hover {
+  color: #000;
+}

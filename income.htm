@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense & Income Tracker</title>
+  <link rel="stylesheet" href="C:\Users\vasu jain\OneDrive\Downloads\Desktop\style3.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Expense & Income Tracker</h1>
+
+    <div class="balance">
+      <h2>Balance: ₹<span id="balance">0</span></h2>
+      <p>Income: ₹<span id="income">0</span> | Expense: ₹<span id="expense">0</span></p>
+    </div>
+
+    <div class="net-total">
+      <h2>Net (Income - Expense): ₹<span id="net-total">0</span></h2>
+    </div>
+
+    <h2>Monthly Summary</h2>
+    <p id="monthly-summary">Income: ₹0 | Expense: ₹0</p>
+
+    <div class="transaction-form">
+      <input type="text" id="description" placeholder="Description" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button id="add-btn">Add Transaction</button>
+    </div>
+
+    <h2>Transaction History</h2>
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="C:\Users\vasu jain\OneDrive\Downloads\Desktop\script3.js"></script>
+</body>
+</html>
